@@ -8,7 +8,18 @@ export const Fundo = styled.div`
 `;
 export const Titulo = styled.div`
     font-size: 32pt ;
-    hpadding: 32px 0;
+    padding: 32px 0;
     color: #2da9f3;
     text-align: center;
+`;
+export const Campo = styled.div`
+    background: #303741
+    border-radius: 16px;
+    padding: 16px;
+`;
+export const Conteudo = styled.div`
+    background: #3b424c;
+    border-radius: 16px;
+    margin-botton: 16px;
+    padding: 16px;
 `;
