@@ -1,9 +1,9 @@
-import { Fundo } from "./Styled/Layout"
+import { Fundo,Titulo } from "./Styled/Layout"
 import './public.css'
 function App() {
   return (
     <Fundo>
-    a
+    <Titulo>Styled Components</Titulo>
     </Fundo>
   );
 }
