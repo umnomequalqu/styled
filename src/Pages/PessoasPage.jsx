@@ -1,6 +1,7 @@
 import { Fundo,Titulo,Campo,Conteudo } from "../Styled/Layout"
 import '../public.css'
 import axios from 'axios';
+import Navbar from "../components/Navbar";
 import {useState,useEffect} from 'react';
 import Pessoa from "../components/Pessoa";
 function PessoasPage() {
@@ -12,7 +13,7 @@ function PessoasPage() {
       .catch("Deu erro pegar os dados da API")
   },[])
   return (
-    <Fundo>
+    <Fundo><Navbar/>
     <Titulo>Styled Components</Titulo>
     <Campo>
         {pessoas.map((p,index)=><Pessoa key={index} {...p}/>)}

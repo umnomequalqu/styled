@@ -1,10 +1,15 @@
 import react from 'react'
-import { Conteudo } from '../Styled/Layout'
+import { Conteudo,Imagem,DivFlex,Info } from '../Styled/Layout'
 function Pessoa(props) {
     const fullName = props.name.title + " " + props.name.first + " " + props.name.last;
-
+    const linkImg = props.picture.large;
     return (
-        <Conteudo>{fullName}</Conteudo>
+        <Conteudo >
+            <DivFlex>
+            <Imagem scr={linkImg}/>
+            <Info>{fullName}</Info>
+            </DivFlex>
+            </Conteudo>
     )
 }
 export default Pessoa

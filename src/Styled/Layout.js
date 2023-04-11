@@ -23,3 +23,19 @@ export const Conteudo = styled.div`
     margin-botton: 16px;
     padding: 16px;
 `;
+export const Imagem = styled.img`
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+`;
+export const DivFlex= styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+`;
+export const Info = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+`;
