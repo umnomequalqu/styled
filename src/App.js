@@ -15,7 +15,7 @@ function App() {
     <Fundo>
     <Titulo>Styled Components</Titulo>
     <Campo>
-        {pessoas.map(p=><Pessoa key={p.id} {...p}/>)}
+        {pessoas.map((p,index)=><Pessoa key={index} {...p}/>)}
     </Campo>
     </Fundo>
   );
